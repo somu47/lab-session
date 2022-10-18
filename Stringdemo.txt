@@ -1,0 +1,27 @@
+
+
+
+public class stringdemo {
+	public static void main(String[] args) {
+		String s1="somu";
+		String s2="vijay";
+		System.out.println(s1.charAt(0));
+		System.out.println(s1.substring(1));
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.substring(1));
+		System.out.println(s1.replace("u", "an"));
+		System.out.println(s1.split(s2));
+		System.out.println(s2.concat("kumar"));
+		System.out.println(s1==s2);
+		
+		StringBuilder s3=new StringBuilder("sundar");
+		StringBuffer s4=new StringBuffer("ram");
+		System.out.println(s3.equals(s4));
+		System.out.println(s3.reverse());
+		System.out.println(s3.append(s2));
+		System.out.println(s3.insert(1, 'o'));
+		System.out.println(s4.delete(0, 1));
+	}
+
+}

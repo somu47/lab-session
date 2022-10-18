@@ -1,0 +1,22 @@
+
+
+ class invalidbalanceException extends Exception
+ {
+	 public invalidbalanceException () {
+		
+	}
+ }
+
+public class userdefined {
+	static void check(int balance) throws invalidbalanceException{
+		if (balance < 2000) {
+		    throw new invalidbalanceException();
+		} else {
+             System.out.println("valid balance");
+		}
+
+	}public static void main(String[] args) throws invalidbalanceException {
+		check(2001);
+	}
+
+}
