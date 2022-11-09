@@ -1,0 +1,11 @@
+create database test
+use test
+create table bank (acno int primary key, cname varchar(20) not null, city varchar(40) default 'hyd', balance int not null ,bcode int)
+select * from bank
+insert into bank values(100,'kamal','chn',2000,200),(101,'sita','bengal',3000,201),(102,'sini','ben',5055,202),(103,'siqa','delhi',3000,201),(104,'price','bengalore',150,222)
+update bank set bcode=203 where acno=103
+create table branch(bcode int primary key,loc varchar (10))
+insert into branch values(200,'chn'),(201 ,'bengal')
+create table trans (acno int, foreign key(acno) references bank (acno),type char(1) , tdate datetime , amt int)
+select * from trans
+select * from bank where balance<=2500
